@@ -22,24 +22,6 @@ MonoBehaviour:
   m_Scenes:
   - m_enabled: 1
     m_path: Assets/Scenes/MetaMenu.unity
-  - m_enabled: 1
-    m_path: Assets/Scenes/SimpleAR/SimpleAR.unity
-  - m_enabled: 1
-    m_path: Assets/Scenes/Anchors/Anchors.unity
-  - m_enabled: 1
-    m_path: Assets/Scenes/Anchors/TestAnchors.unity
-  - m_enabled: 1
-    m_path: Assets/Scenes/Meta/MetaSceneCapture.unity
-  - m_enabled: 1
-    m_path: Assets/Scenes/Meta/MetaDisplayRefreshRate.unity
-  - m_enabled: 1
-    m_path: Assets/Scenes/PlaneDetection/PlaneDetectionMode/PlaneDetectionMode.unity
-  - m_enabled: 1
-    m_path: Assets/Scenes/BoundingBoxDetection/BoundingBoxes.unity
-  - m_enabled: 1
-    m_path: Assets/Scenes/Meshing/NormalMeshes/NormalMeshes.unity
-  - m_enabled: 1
-    m_path: Assets/Scenes/Meta/MetaBoundaryVisibility.unity
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
     m_Settings:
@@ -853,12 +835,12 @@ MonoBehaviour:
     - line: '|   webGLMemoryLinearGrowthStep: 16'
     - line: '|   webGLMemoryGeometricGrowthStep: 0.2'
     - line: '|   webGLMemoryGeometricGrowthCap: 96'
+    - line: '|   webGLEnableWebGPU: 0'
     - line: '|   webGLPowerPreference: 2'
     - line: '|   webGLWebAssemblyTable: 0'
     - line: '|   webGLWebAssemblyBigInt: 0'
     - line: '|   webGLCloseOnQuit: 0'
     - line: '|   webWasm2023: 0'
-    - line: '|   webEnableSubmoduleStrippingCompatibility: 0'
     - line: '|   scriptingDefineSymbols:'
     - line: '|     : UNITY_POST_PROCESSING_STACK_V2'
     - line: '|     Android: UNITY_POST_PROCESSING_STACK_V2;USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS'
@@ -997,7 +979,6 @@ MonoBehaviour:
     - line: '|   insecureHttpOption: 0'
     - line: '|   androidVulkanDenyFilterList: []'
     - line: '|   androidVulkanAllowFilterList: []'
-    - line: '|   androidVulkanDeviceFilterListAsset: {instanceID: 0}'
     - line: '| '
   references:
     version: 2
