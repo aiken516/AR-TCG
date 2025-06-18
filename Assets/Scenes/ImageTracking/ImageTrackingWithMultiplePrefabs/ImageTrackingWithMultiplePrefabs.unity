@@ -42,7 +42,8 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 12
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -617,6 +618,12 @@ MonoBehaviour:
       type: 3}
   - imageGuid: aae75228-1973-4dc0-b7a2-53d1566ee402
     imagePrefab: {fileID: 3279860958548870494, guid: 2584331523bd14e8898965d93034efdb,
+      type: 3}
+  - imageGuid: edd73be0-2ddc-4461-ad84-d8ac114bcc2b
+    imagePrefab: {fileID: 7412390272454394293, guid: 96da40f3abd65b74998a2bd82e4825bb,
+      type: 3}
+  - imageGuid: fbb38078-8fae-463e-a3b8-5e03009e225c
+    imagePrefab: {fileID: 7412390272454394293, guid: fc1b29a33d07c3d4fa6a32bb0010ab66,
       type: 3}
   m_ImageLibrary: {fileID: 11400000, guid: c86e375d7e7430442a1104e88fa21f21, type: 2}
 --- !u!114 &1099623061
