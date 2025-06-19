@@ -3,9 +3,12 @@ using UnityEngine;
 public class Monster : MonoBehaviour
 {
     [SerializeField] private MonsterUI _monsterUI;
+    [SerializeField] private ParticleSystem _attackEffect;
 
+    [SerializeField] private string _monsterName = "Monster";
     [SerializeField] private int _attack = 1;
     [SerializeField] private int _health = 1;
+    private int _currenthealth;
 
     private Animator _animator;
     
@@ -16,9 +19,11 @@ public class Monster : MonoBehaviour
     {
         if (_monsterUI != null)
         {
-            _monsterUI.SetText(_attack, _health);
+            _monsterUI.SetNameText(_monsterName);
+            _monsterUI.SetStatText(_attack, _health, false);
         }
-        
+
+        _currenthealth = _health;
         _animator = GetComponent<Animator>();
     }
 
@@ -26,14 +31,16 @@ public class Monster : MonoBehaviour
     { 
         monster.TakeDamage(_attack);
         _animator.SetTrigger(ATTACK_ANIMATION);
+        transform.LookAt(monster.transform.position);
     }
 
     private void TakeDamage(int damage)
     {
-        _health -= damage;
-        _monsterUI.SetText(_attack, _health);
+        _currenthealth -= damage;
+        _monsterUI.SetStatText(_attack, _currenthealth, _currenthealth != _health);
+        _attackEffect.Play();
 
-        if (_health <= 0)
+        if (_currenthealth <= 0)
         {
             Die();
         }
