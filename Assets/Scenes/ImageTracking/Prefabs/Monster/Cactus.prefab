@@ -222,8 +222,8 @@ MonoBehaviour:
   _monsterUI: {fileID: 8746682519644330338}
   _attackEffect: {fileID: 2092877577586962406}
   _monsterName: Cactus
-  _attack: 6
-  _health: 4
+  _attack: 3
+  _health: 7
 --- !u!1 &1006438018938304421
 GameObject:
   m_ObjectHideFlags: 0

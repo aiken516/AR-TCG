@@ -14,7 +14,8 @@ public class Monster : MonoBehaviour
     
     private readonly int IDLE_ANIMATION = Animator.StringToHash("Idle");
     private readonly int ATTACK_ANIMATION = Animator.StringToHash("Attack");
-    
+    private readonly int DIE_ANIMATION = Animator.StringToHash("Die");
+
     private void Start()
     {
         if (_monsterUI != null)
@@ -48,7 +49,9 @@ public class Monster : MonoBehaviour
 
     private void Die()
     {
-        Destroy(gameObject);
+        _animator.SetTrigger(DIE_ANIMATION);
+        GetComponent<Collider>().enabled = false;
+        Destroy(gameObject, 2.0f);
     }
 
     private void OnTriggerEnter(Collider other)

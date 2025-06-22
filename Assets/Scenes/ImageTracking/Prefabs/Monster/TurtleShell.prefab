@@ -559,7 +559,7 @@ Animator:
   m_GameObject: {fileID: 1524411113276028}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 599b2dc9e6c44a8ebc02ddea1f18d215, type: 3}
-  m_Controller: {fileID: 9100000, guid: 1f68948a5bb74f2fa9e9087a872750e9, type: 2}
+  m_Controller: {fileID: 9100000, guid: 20b27a9765f2a7846a453408415be3e9, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -634,8 +634,8 @@ MonoBehaviour:
   _monsterUI: {fileID: 7068841146537585893}
   _attackEffect: {fileID: 6131513370797613320}
   _monsterName: Turtle
-  _attack: 5
-  _health: 4
+  _attack: 3
+  _health: 7
 --- !u!1 &1532652994627396
 GameObject:
   m_ObjectHideFlags: 0
