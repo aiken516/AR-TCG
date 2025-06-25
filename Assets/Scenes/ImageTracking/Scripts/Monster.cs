@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Monster : MonoBehaviour
@@ -8,13 +9,15 @@ public class Monster : MonoBehaviour
     [SerializeField] private string _monsterName = "Monster";
     [SerializeField] private int _attack = 1;
     [SerializeField] private int _health = 1;
-    private int _currenthealth;
 
-    private Animator _animator;
-    
     private readonly int IDLE_ANIMATION = Animator.StringToHash("Idle");
     private readonly int ATTACK_ANIMATION = Animator.StringToHash("Attack");
     private readonly int DIE_ANIMATION = Animator.StringToHash("Die");
+    private const float ATTACK_COOLDOWN = 1.0f;
+
+    private Animator _animator;
+    private int _currenthealth;
+    private bool _isAttackCoolDown = false;
 
     private void Start()
     {
@@ -56,9 +59,20 @@ public class Monster : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Monster"))
-        {
-            other.GetComponent<Monster>()?.Attack(this);
+        if (!_isAttackCoolDown)
+        { 
+            if (other.CompareTag("Monster"))
+            {
+                StartCoroutine(AttackCooldown());
+                other.GetComponent<Monster>()?.Attack(this);
+            }
         }
+    }
+
+    private IEnumerator AttackCooldown()
+    {
+        _isAttackCoolDown = true;
+        yield return new WaitForSeconds(ATTACK_COOLDOWN);
+        _isAttackCoolDown = false;
     }
 }

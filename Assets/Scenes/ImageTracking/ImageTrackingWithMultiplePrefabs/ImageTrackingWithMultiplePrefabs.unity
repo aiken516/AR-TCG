@@ -866,7 +866,7 @@ PrefabInstance:
     - target: {fileID: 7278093142110821250, guid: b8f7382051281456a93ced9c504c48c4,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7305537445174312848, guid: b8f7382051281456a93ced9c504c48c4,
         type: 3}
@@ -901,12 +901,12 @@ PrefabInstance:
     - target: {fileID: 7505704518034856899, guid: b8f7382051281456a93ced9c504c48c4,
         type: 3}
       propertyPath: m_text
-      value: ImageTrackingWithMultiplePrefabs
+      value: Put the Card on the screen
       objectReference: {fileID: 0}
     - target: {fileID: 7505704518034856899, guid: b8f7382051281456a93ced9c504c48c4,
         type: 3}
       propertyPath: m_fontSize
-      value: 40
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 7505704518034856899, guid: b8f7382051281456a93ced9c504c48c4,
         type: 3}
@@ -932,7 +932,7 @@ PrefabInstance:
     - target: {fileID: 7505704518034856899, guid: b8f7382051281456a93ced9c504c48c4,
         type: 3}
       propertyPath: m_fontSizeBase
-      value: 40
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 7505704518034856899, guid: b8f7382051281456a93ced9c504c48c4,
         type: 3}
@@ -953,7 +953,7 @@ PrefabInstance:
     - target: {fileID: 8146104854219513081, guid: b8f7382051281456a93ced9c504c48c4,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8725182372003459067, guid: b8f7382051281456a93ced9c504c48c4,
         type: 3}
